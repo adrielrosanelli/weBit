@@ -1,4 +1,157 @@
 p{
-    color: white;
     font-family: 'Poppins';
+    font-weight: 600 !important;
 }
+i{
+    color: white;
+}
+.teste{
+    position: absolute;
+    z-index: -1;
+    float: right;
+}
+.grid{
+    background-color: white;
+    height: 5%;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    #logo{
+        // margin-left: 20px;
+        // top: 0;
+        // left: 0;
+        // position: absolute;
+        // transform: rotate(325deg);
+        width: 50%;
+    }
+}
+.botao{
+    margin-top: 20px;
+    color: var(--cor-primaria);
+}
+.hoverado:hover{
+    .circle{
+        color: var(--cor-secundaria)
+    }
+    p{
+        color: var(--cor-detalhe);
+    }
+
+}
+
+
+// !!! TESTE
+
+    // EFEITO DE SOMBRA
+// #logado {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     position: relative;
+//     margin: 20px auto;
+//     width: 100px;
+//     height: 5px;
+//     background: white;
+//     border-radius: 75px;
+//     transition: 1s box-shadow;
+//   }
+
+//   #logado:hover {
+//     box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+//   }
+
+//   #logado:hover::before, #logado:hover::after {
+//     display: block;
+//     content: '';
+//     position: absolute;
+//     width: 100px;
+//     height: 5px;
+//     background: var(--cor-primaria);
+//     border-radius: 75px;
+//     z-index: -1;
+//     animation: 1s clockwise infinite;
+//   }
+
+//   #logado:hover:after {
+//     background: var(--cor-secundaria);
+//     animation: 2s counterclockwise infinite;
+//   }
+
+//   @keyframes clockwise {
+//     0% {
+//       top: -5px;
+//       left: 0;
+//     }
+//     12% {
+//       top: -2px;
+//       left: 2px;
+//     }
+//     25% {
+//       top: 0;
+//       left: 5px;    
+//     }
+//     37% {
+//       top: 2px;
+//       left: 2px;
+//     }
+//     50% {
+//       top: 5px;
+//       left: 0;    
+//     }
+//     62% {
+//       top: 2px;
+//       left: -2px;
+//     }
+//     75% {
+//       top: 0;
+//       left: -5px;
+//     }
+//     87% {
+//       top: -2px;
+//       left: -2px;
+//     }
+//     100% {
+//       top: -5px;
+//       left: 0;    
+//     }
+//   }
+
+//   @keyframes counterclockwise {
+//     0% {
+//       top: -5px;
+//       right: 0;
+//     }
+//     12% {
+//       top: -2px;
+//       right: 2px;
+//     }
+//     25% {
+//       top: 0;
+//       right: 5px;    
+//     }
+//     37% {
+//       top: 2px;
+//       right: 2px;
+//     }
+//     50% {
+//       top: 5px;
+//       right: 0;    
+//     }
+//     62% {
+//       top: 2px;
+//       right: -2px;
+//     }
+//     75% {
+//       top: 0;
+//       right: -5px;
+//     }
+//     87% {
+//       top: -2px;
+//       right: -2px;
+//     }
+//     100% {
+//       top: -5px;
+//       right: 0;    
+//     }
+//   }

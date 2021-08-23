@@ -1,20 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import "variables";
 
-$cor-primaria : #04477B;
-$cor-secundaria : #5CEAD2;
-$cor-complementar : #5044CC;
-$cor-detalhe : #FFB701;
-
-*{
-    height: 100%;
-}
 body{
-    background: 
-    linear-gradient(100deg, $cor-primaria, rgba(0,255,0,0)),     // Marinho
-    linear-gradient(200deg, $cor-complementar, rgba(255,0,0,0)), // Roxo
-    linear-gradient(300deg, $cor-secundaria, rgba(255,0,0,0)),   // Azulzinho
+    width: 100% !important;
+    height: 100% !important;
+    background-color: white;
     // background: 
-    // linear-gradient($cor-primaria,$cor-complementar,$cor-secundaria)
-    // linear-gradient($cor-primaria,$cor-complementar,$cor-secundaria);
+    // linear-gradient(100deg, var(--cor-primaria), rgba(0,255,0,0)),     // Marinho
+    // linear-gradient(200deg, var(--cor-complementar), rgba(255,0,0,0)), // Roxo
+    // linear-gradient(300deg, var(--cor-secundaria), rgba(255,0,0,0)),   // Azulzinho
+
 }
+html, body { height: 100%; }
