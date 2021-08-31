@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CorpoHomeComponent } from './pages/corpo-home/corpo-home.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    CorpoHomeComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+
+  ],
+  exports: [
+    CorpoHomeComponent
   ]
 })
 export class HomeModule { }
