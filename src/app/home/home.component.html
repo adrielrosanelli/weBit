@@ -1,30 +1,29 @@
 <!-- <img src="../assets/images/fundo02-mobile.svg" alt="" class="teste"> -->
 <div class="ui grid">
-    <div class="row" style="padding: 0px; margin: 0px;">
-        <div class="two wide column hoverado">
+    <div class="row">
+        <div id="teste" class="eight wide column">
             <img id="logo" src="..\assets\images\baidu.png" alt="">
         </div>
-        <div id="logado" class="right floated column hoverado">
-            <p class="botao" style="padding-bottom: 0px; margin-bottom: 0px; margin-top: 12px;">Home</p>
+        <div (click)="ativou('1')" class="right floated column {{ativo == '1'? 'ativado':''}} hoverado">
+            <p class="botao">Home</p>
             <i class="circle mini icon"></i>
         </div>
-        <div class="column hoverado">
-            <p class="botao" style="padding-bottom: 0px; margin-bottom: 0px; margin-top: 12px;">Contato</p>
+        <div (click)="ativou('2')" class="column {{ativo == '2'? 'ativado':''}} hoverado">
+            <p class="botao">Contato</p>
             <i class="circle mini icon"></i>
         </div>
-        <div class="column hoverado">
-            <p class="botao" style="padding-bottom: 0px; margin-bottom: 0px; margin-top: 12px;">Sobre</p>
+        <div (click)="ativou('3')" class="column {{ativo == '3'? 'ativado':''}} hoverado">
+            <p class="botao">Sobre</p>
             <i class="circle mini icon"></i>
         </div>
-        <div class="column hoverado">
-            <p class="botao" style="padding-bottom: 0px; margin-bottom: 0px; margin-top: 12px;">Serviços</p>
+        <div (click)="ativou('4')" class="column {{ativo == '4'? 'ativado':''}} hoverado">
+            <p class="botao">Serviços</p>
             <i class="circle mini icon"></i>
         </div>
-        <div class="column hoverado">
-            <p class="botao" style="padding-bottom: 0px; margin-bottom: 0px; margin-top: 12px;">Equipe</p>
+        <div (click)="ativou('5')" class="column {{ativo == '5'? 'ativado':''}} hoverado">
+            <p class="botao">Equipe</p>
             <i class="circle mini icon"></i>
-        </div>
+            </div>
     </div>
 </div>
-<div class="ui divider" style="padding: 0px !important;margin:15px 0px 0px 0px;"></div>
 <corpo-home></corpo-home>

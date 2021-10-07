@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  public ativo: String = "0";
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ativou(valor: String) {
+    this.ativo = valor;
   }
 
 }

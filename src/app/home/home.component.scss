@@ -1,37 +1,60 @@
 p{
     font-family: 'Poppins';
     font-weight: 600 !important;
+    
+}
+@media (max-width: 1366) {
+    p{
+        font-size: 250px;
+    }
 }
 i{
     color: white;
 }
-.teste{
-    position: absolute;
-    z-index: -1;
-    float: right;
-}
+
 .grid{
     background-color: white;
-    height: 5%;
+    height: fit-content;
     border-radius: 10px;
-    justify-content: center;
-    text-align: center;
     margin: 10px;
+    .row{
+        justify-content: space-evenly !important;
+    }
+
     #logo{
-        // margin-left: 20px;
-        // top: 0;
-        // left: 0;
-        // position: absolute;
+        text-align: start !important;
         // transform: rotate(325deg);
-        width: 50%;
+        width: 20%;
     }
 }
 .botao{
-    margin-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    // margin-top: 12px;
     color: var(--cor-primaria);
 }
+.circle{
+    visibility: hidden;
+}
+.hoverado{
+    margin-top: 15px !important;
+    overflow: hidden;
+    text-align: center !important;
+    align-items: center !important; //centraliza horizontalmente
+    justify-content: end !important; //cetraliza verticalmente
+}
+
 .hoverado:hover{
+    cursor: pointer;
+}
+
+.ativado{
     .circle{
+        // margin-top: 5px;
+        // margin-left: -5px;
+        // top: 1;
+        // position: absolute;
+        visibility: visible !important;
         color: var(--cor-secundaria)
     }
     p{
@@ -39,7 +62,6 @@ i{
     }
 
 }
-
 
 // !!! TESTE
 
