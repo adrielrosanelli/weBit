@@ -1,12 +1,12 @@
 .container{
     width: 100%;
-    background: 
-    linear-gradient(100deg, var(--cor-primaria), rgba(0,255,0,0)),     // Marinho
-    linear-gradient(200deg, var(--cor-complementar), rgba(255,0,0,0)), // Roxo
-    linear-gradient(300deg, var(--cor-secundaria), rgba(255,0,0,0)),   // Azulzinho
+    // background: 
+    // linear-gradient(100deg, var(--cor-primaria), rgba(0,255,0,0)),     // Marinho
+    // linear-gradient(200deg, var(--cor-complementar), rgba(255,0,0,0)), // Roxo
+    // linear-gradient(300deg, var(--cor-secundaria), rgba(255,0,0,0)),   // Azulzinho
 }
-.segment{
-    height: 450px;
+.centered{
+    height: 900px;
 }
 p{
     font-family: 'Poppins';
@@ -17,7 +17,10 @@ p{
     height: 100%;
     
   }
+  .swiper-slide{
+      object-fit: fill;
+      height: 450px;
+  }
   img{
-    object-fit: contain;
-      justify-content: center;
+      border-radius: 15px;
   }

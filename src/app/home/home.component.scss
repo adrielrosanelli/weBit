@@ -13,7 +13,7 @@ i{
 }
 
 .grid{
-    background-color: white;
+    background-color: alpha($color: #00000000);
     height: fit-content;
     border-radius: 10px;
     margin: 10px;
@@ -31,7 +31,7 @@ i{
     padding-bottom: 0px;
     margin-bottom: 0px;
     // margin-top: 12px;
-    color: var(--cor-primaria);
+    color: white;
 }
 .circle{
     visibility: hidden;

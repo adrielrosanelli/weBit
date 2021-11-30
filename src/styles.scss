@@ -5,11 +5,11 @@
 body{
     width: 100% !important;
     height: 100% !important;
-    background-color: white;
-    // background: 
-    // linear-gradient(100deg, var(--cor-primaria), rgba(0,255,0,0)),     // Marinho
-    // linear-gradient(200deg, var(--cor-complementar), rgba(255,0,0,0)), // Roxo
-    // linear-gradient(300deg, var(--cor-secundaria), rgba(255,0,0,0)),   // Azulzinho
+    // background-color: pink;
+    background: 
+    linear-gradient(100deg, var(--cor-primaria), rgba(0,255,0,0)),     // Marinho
+    linear-gradient(200deg, var(--cor-complementar), rgba(255,0,0,0)), // Roxo
+    linear-gradient(300deg, var(--cor-secundaria), rgba(255,0,0,0)),   // Azulzinho
 
 }
 html, body { height: 100%; }
