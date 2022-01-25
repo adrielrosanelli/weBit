@@ -1,4 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
 @Component({
   selector: 'header',
   templateUrl: './header.component.html',
@@ -16,27 +18,32 @@ export class HeaderComponent implements OnInit {
 
     public largura:String = "30%";
 
-    constructor() {
+    constructor(private route: ActivatedRoute,private router: Router) {
         this.botoes = [
             {
                 name: '1',
-                descricao: 'Inicio'
+                descricao: 'Inicio',
+                rota: 'inicio'
             },
             {
                 name: '2',
-                descricao: 'Contato'
+                descricao: 'Contato',
+                rota: 'contato'
             },
             {
                 name: '3',
-                descricao: 'Sobre'
+                descricao: 'Sobre',
+                rota: 'sobre'
             },
             {
                 name: '4',
-                descricao: 'Serviços'
+                descricao: 'Serviços',
+                rota: 'servicos'
             },
             {
                 name: '5',
-                descricao: 'Equipe'
+                descricao: 'Equipe',
+                rota: 'equipe'
             },
         ];
     }
@@ -45,12 +52,19 @@ export class HeaderComponent implements OnInit {
     onResize() {
         this.windowHeigth = window.innerHeight;
         this.windowWidth = window.innerWidth;
-        this.largura = (this.windowWidth /5).toString();
+        if(window.innerWidth >= 700){
+            this.largura = (this.windowWidth /5).toString();
+        }else{
+            this.largura = "150";
+        }
     }
 
 
-    ativou(valor: String) {
-        this.ativo = valor;
+    ativou(valor:any) {
+        this.ativo = valor.name;
+
+        this.router.navigate(['/' + valor.rota])
+
     }
 
     ngOnInit(): void {

@@ -3,13 +3,13 @@ p{
     font-weight: 600 !important;
     color: white;
 }
-// @media (max-width: 600) {
-// }
 img{
     text-align: start !important;
 }
-
-
+.texto{
+    font-family: 'Poppins';
+    font-weight: 600 !important;
+}
 .hoverado{
     margin-top: 15px !important;
     overflow: hidden;
@@ -17,11 +17,9 @@ img{
     align-items: center !important; //centraliza horizontalmente
     justify-content: end !important; //cetraliza verticalmente
 }
-
 .hoverado:hover{
     cursor: pointer;
 }
-
 .ativado{
 
     p{
