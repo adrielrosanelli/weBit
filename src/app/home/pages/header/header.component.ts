@@ -57,6 +57,7 @@ export class HeaderComponent implements OnInit {
         }else{
             this.largura = "150";
         }
+
     }
 
 

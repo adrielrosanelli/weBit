@@ -1,0 +1,75 @@
+<div style="display: flex;justify-content: center;">
+    <div class="footer">
+        <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+            <!-- ! LOGO -->
+            <div nz-col class="gutter-row" [nzSpan]="8" style="text-align: center;" *ngIf="windowWidth >=700">
+                <div class="inner-box" id="logo"><img *ngIf="windowWidth >=700" nz-image
+                        nzSrc="..\assets\images\marca_horizontal_fundo_branco.png"
+                        style="width: 250px;object-fit: contain;" /></div>
+            </div>
+            <!-- ! Contatos -->
+            <div nz-col class="gutter-row" [nzSpan]="8" style="text-align: center; ">
+                <!-- <div nz-row [nzGutter]="[16, 24]"> -->
+                <div nz-col class="gutter-row">
+                    <div style="color: #FFB701;font-size: 20px;" class="inner-box item">Contatos</div>
+                </div>
+                <div nz-col class="gutter-row" [nzSpan]="24">
+                    <div class="inner-box item"><a target="_blank"
+                            style="color: #1890ff;"
+                            href="https://www.instagram.com/webitconsultoria/">
+                            <i nz-icon nzType="instagram" nzTheme="fill"></i>
+                            instagram.com/webitconsultoria/</a>
+                    </div>
+                </div>
+                <div nz-col class="gutter-row" [nzSpan]="24">
+                    <div class="inner-box item"><a target="_blank"
+                            style="color: #1890ff;"
+                            href="https://www.linkedin.com/company/webit-consultoria/">
+                            <i nz-icon nzType="linkedin" nzTheme="fill"></i>
+                            linkedin.com/company/webit-consultoria/</a>
+                    </div>
+                </div>
+                <div nz-col class="gutter-row" [nzSpan]="24">
+                    <div class="inner-box item"><a target="_blank"
+                            style="color: #1890ff;"
+                            href="https://www.facebook.com/webitconsultoria">
+                            <i nz-icon nzType="facebook" nzTheme="fill"></i>
+                            facebook.com/webitconsultoria</a>
+                    </div>
+                </div>
+                <div nz-col class="gutter-row" [nzSpan]="24">
+                    <div class="inner-box item" style="justify-content: center;"><a target="_blank"
+                            style="color: #1890ff;"
+                            href="https://api.whatsapp.com/send?1=pt_BR&phone=5549991865818">
+                            <i nz-icon nzType="whats-app" nzTheme="outline"></i>
+                            49 99186 5818</a>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <!-- ! Trabalhe conosco -->
+            <div nz-col class="gutter-row" [nzSpan]="8" style="text-align: center;">
+
+                <div nz-row [nzGutter]="[16, 24]">
+                    <div nz-col class="gutter-row" [nzSpan]="24">
+                        <div class="inner-box item" style="justify-content: center;">
+                            <div style="color: #FFB701;font-size: 20px;" class="inner-box">Trabalhe Conosco</div>
+                        </div>
+                        <div class="inner-box item" style="justify-content: center;">
+                            <a target="_blank"
+                                style="color: #1890ff;"
+                                href="mailto:adriel16smo@gmail.com?Subject=Quero Trabaia">
+                                <i nz-icon nzType="mail" nzTheme="fill"></i>
+                                email garaio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <p style="color: #FFB701;font-size: 20px;">Contatos</p>
+        <p style="color: #FFB701;font-size: 20px;">Trabalhe conosco</p> -->
+        <!-- <a href="mailto:someone@yoursite.com">Email Us</a>  -->
+    </div>
+</div>

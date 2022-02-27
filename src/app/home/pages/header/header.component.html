@@ -1,7 +1,8 @@
 <div class="site-page-header-ghost-wrapper">
   <nz-page-header [nzGhost]="true">
     <nz-page-header-title>
-      <img [width]="largura" nz-image nzSrc="..\assets\images\baidu.png" />
+      <img *ngIf="windowWidth >=700" [width]="largura" nz-image nzSrc="..\assets\images\g834.png" />
+      <img *ngIf="windowWidth <=700" nz-image nzSrc="..\assets\images\simbolo_principal.png" style="width: 75px;" />
     </nz-page-header-title>
 
     <nz-page-header-extra *ngIf="windowWidth >=700">

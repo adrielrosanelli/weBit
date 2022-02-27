@@ -1,0 +1,21 @@
+.footer{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 95%;
+    height: 100%;
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+    // background-color: rgba(0, 0, 0,0.03);
+    background-color: white;
+}
+.item{
+    text-align: left;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#logo{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}

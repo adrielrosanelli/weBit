@@ -1,19 +1,19 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+
 @Component({
-  selector: 'corpo-home',
-  templateUrl: './corpo-home.component.html',
-  styleUrls: ['./corpo-home.component.scss']
+  selector: 'footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.scss']
 })
-export class CorpoHomeComponent implements OnInit {
+export class FooterComponent implements OnInit {
 
   public windowHeigth: any = window.innerHeight;
   public windowWidth: number = window.innerWidth;
 
-  constructor() {
-  }
+
+  constructor() { }
 
   ngOnInit(): void {
-    document.getElementsByTagName('home')[0].setAttribute('style', 'flex: 1');
     this.onResize();
   }
 
@@ -21,7 +21,6 @@ export class CorpoHomeComponent implements OnInit {
   onResize() {
     this.windowHeigth = window.innerHeight;
     this.windowWidth = window.innerWidth;
-
   }
 
 }

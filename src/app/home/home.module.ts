@@ -8,11 +8,18 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzImageModule } from 'ng-zorro-antd/image';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { CorpoContatoComponent } from './pages/corpo-contato/corpo-contato.component';
+import { HomeRoutingModule } from './home-routing.module';
+import { FooterComponent } from './pages/footer/footer.component';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+
 
 @NgModule({
   declarations: [
     HeaderComponent,
     CorpoHomeComponent,
+    CorpoContatoComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -20,11 +27,15 @@ import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
     NzButtonModule,
     NzImageModule,
     NzIconModule,
-    NzDropDownModule
+    NzDropDownModule,
+    HomeRoutingModule,
+    NzGridModule,
   ],
   exports: [
     CorpoHomeComponent,
     HeaderComponent,
+    CorpoContatoComponent,
+    FooterComponent
   ]
 })
 export class HomeModule { }
