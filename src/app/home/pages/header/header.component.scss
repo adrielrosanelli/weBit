@@ -16,6 +16,7 @@ img{
     text-align: center !important;
     align-items: center !important; //centraliza horizontalmente
     justify-content: end !important; //cetraliza verticalmente
+    background-color: 0 0 0 0;
 }
 .hoverado:hover{
     cursor: pointer;
@@ -25,5 +26,6 @@ img{
     p{
         color: var(--cor-detalhe);
     }
+    border-bottom: 2px solid var(--cor-detalhe);
 
 }

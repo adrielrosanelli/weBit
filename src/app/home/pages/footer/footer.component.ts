@@ -9,7 +9,7 @@ export class FooterComponent implements OnInit {
 
   public windowHeigth: any = window.innerHeight;
   public windowWidth: number = window.innerWidth;
-
+  public display: boolean = true;
 
   constructor() { }
 

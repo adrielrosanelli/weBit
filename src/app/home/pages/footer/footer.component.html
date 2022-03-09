@@ -1,5 +1,10 @@
 <div style="display: flex;justify-content: center;">
-    <div class="footer">
+    <div *ngIf="display == true" class="footer">
+        <button nz-button nzType="primary" (click)="display = !display"
+            class="hide-button">
+            <i nz-icon nzType="down" nzTheme="outline"></i>
+            Ocultar
+        </button>
         <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
             <!-- ! LOGO -->
             <div nz-col class="gutter-row" [nzSpan]="8" style="text-align: center;" *ngIf="windowWidth >=700">
@@ -60,7 +65,7 @@
                                 style="color: #1890ff;"
                                 href="mailto:adriel16smo@gmail.com?Subject=Quero Trabaia">
                                 <i nz-icon nzType="mail" nzTheme="fill"></i>
-                                email garaio</a>
+                                adriel16smo@gmail.com</a>
                         </div>
                     </div>
                 </div>
@@ -72,4 +77,12 @@
         <p style="color: #FFB701;font-size: 20px;">Trabalhe conosco</p> -->
         <!-- <a href="mailto:someone@yoursite.com">Email Us</a>  -->
     </div>
+    <ng-container>
+        <div *ngIf="display == false">
+            <button nz-button nzType="primary" (click)="display = !display" class="display-button">
+                <i nz-icon nzType="up" nzTheme="outline"></i>
+                <span>Rodapé</span>
+            </button>
+        </div>
+    </ng-container>
 </div>

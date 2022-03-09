@@ -61,12 +61,12 @@ export class HeaderComponent implements OnInit {
     }
 
 
-    ativou(valor:any) {
-        this.ativo = valor.name;
+    // ativou(valor:any) {
+    //     this.ativo = valor.name;
 
-        this.router.navigate(['/' + valor.rota])
+    //     this.router.navigate(['/' + valor.rota])
 
-    }
+    // }
 
     ngOnInit(): void {
         this.onResize();

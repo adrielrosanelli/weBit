@@ -19,3 +19,21 @@
     height: 100%;
     justify-content: center;
 }
+.hide-button{
+    border-top-left-radius: 20px;
+    background-color: var(--cor-primaria);
+    border-style: none;
+}
+.display-button{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    span{
+    color: var(--cor-detalhe);  
+    }
+    i{
+        color: var(--cor-detalhe);  
+    }
+
+    background-color: white;
+    border-style: none;
+}

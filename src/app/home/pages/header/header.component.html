@@ -6,14 +6,14 @@
     </nz-page-header-title>
 
     <nz-page-header-extra *ngIf="windowWidth >=700">
-      <button *ngFor="let but of botoes" nz-button nzType="text" nzSize="large" (click)="ativou(but)"
-        class="{{ativo == but.name? 'ativado':''}} hoverado" routerLinkActive="ativado" routerLink="/servico">
+      <button *ngFor="let but of botoes" nz-button nzType="link" nzSize="large"
+        class="hoverado" routerLinkActive="ativado" [routerLink]="but.rota">
         <p>{{but.descricao}}</p>
       </button>
     </nz-page-header-extra>
     <nz-page-header-extra *ngIf="windowWidth <700">
       <ng-container>
-        <button nz-button nz-dropdown nzType="text" nzSize="large" [nzDropdownMenu]="menu" >
+        <button nz-button nz-dropdown nzType="link" nzSize="large" [nzDropdownMenu]="menu">
           <i nz-icon style="color: white" id="menu">
             <svg style="font-size: 45px;margin-top:25px">
               <path 
@@ -26,8 +26,8 @@
         </button>
         <nz-dropdown-menu #menu="nzDropdownMenu">
           <ul nz-menu>
-            <button nz-menu-item *ngFor="let but of botoes" nz-button nzType="text" nzSize="large" (click)="ativou(but)"
-            class="{{ativo == but.name? 'ativado':''}} hoverado" routerLinkActive="ativado" routerLink="/servico">
+            <button nz-menu-item *ngFor="let but of botoes" nz-button nzType="link" nzSize="large"
+              class="hoverado" routerLinkActive="ativado" [routerLink]="but.rota">
             <p style="color: black;">{{but.descricao}}</p>
           </button>
           </ul>
