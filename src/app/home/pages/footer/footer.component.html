@@ -1,6 +1,6 @@
 <div style="display: flex;justify-content: center;">
-    <div *ngIf="display == true" class="footer">
-        <button nz-button nzType="primary" (click)="display = !display"
+    <div *ngIf="display == true" class="footer" id="footer">
+        <button nz-button nzType="primary" (click)="onOff()"
             class="hide-button">
             <i nz-icon nzType="down" nzTheme="outline"></i>
             Ocultar
@@ -14,7 +14,6 @@
             </div>
             <!-- ! Contatos -->
             <div nz-col class="gutter-row" [nzSpan]="8" style="text-align: center; ">
-                <!-- <div nz-row [nzGutter]="[16, 24]"> -->
                 <div nz-col class="gutter-row">
                     <div style="color: #FFB701;font-size: 20px;" class="inner-box item">Contatos</div>
                 </div>
@@ -72,10 +71,6 @@
             </div>
 
         </div>
-
-        <!-- <p style="color: #FFB701;font-size: 20px;">Contatos</p>
-        <p style="color: #FFB701;font-size: 20px;">Trabalhe conosco</p> -->
-        <!-- <a href="mailto:someone@yoursite.com">Email Us</a>  -->
     </div>
     <ng-container>
         <div *ngIf="display == false">

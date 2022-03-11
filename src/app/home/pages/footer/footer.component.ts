@@ -22,5 +22,26 @@ export class FooterComponent implements OnInit {
     this.windowHeigth = window.innerHeight;
     this.windowWidth = window.innerWidth;
   }
+  onOff() {
+    document.getElementById('footer')!.style.height = "200px";
+    setTimeout(() => {
+      document.getElementById('footer')!.style.height = "175px";
+      setTimeout(() => {
+        document.getElementById('footer')!.style.height = "155px";
+        setTimeout(() => {
+          document.getElementById('footer')!.style.height = "135px";
+          setTimeout(() => {
+            document.getElementById('footer')!.style.height = "125px";
+            setTimeout(() => {
+              document.getElementById('footer')!.style.height = "100px";
+            }, 15);
+          }, 15);
+        }, 15);
+      }, 15);
+    }, 15);
+    setTimeout(() => {
+      this.display = !this.display;
+    }, 100);
+  }
 
 }
