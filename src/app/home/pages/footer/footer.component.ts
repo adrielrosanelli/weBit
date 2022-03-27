@@ -23,17 +23,17 @@ export class FooterComponent implements OnInit {
     this.windowWidth = window.innerWidth;
   }
   onOff() {
-    document.getElementById('footer')!.style.height = "200px";
+    document.getElementById('footer')!.style.opacity = "0.7";
     setTimeout(() => {
-      document.getElementById('footer')!.style.height = "175px";
+      document.getElementById('footer')!.style.opacity = "0.6";
       setTimeout(() => {
-        document.getElementById('footer')!.style.height = "155px";
+        document.getElementById('footer')!.style.opacity = "0.5";
         setTimeout(() => {
-          document.getElementById('footer')!.style.height = "135px";
+          document.getElementById('footer')!.style.opacity = "0.4";
           setTimeout(() => {
-            document.getElementById('footer')!.style.height = "125px";
+            document.getElementById('footer')!.style.opacity = "0.3";
             setTimeout(() => {
-              document.getElementById('footer')!.style.height = "100px";
+              document.getElementById('footer')!.style.opacity = "0.2";
             }, 15);
           }, 15);
         }, 15);

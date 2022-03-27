@@ -12,7 +12,7 @@ import { CorpoContatoComponent } from './pages/corpo-contato/corpo-contato.compo
 import { HomeRoutingModule } from './home-routing.module';
 import { FooterComponent } from './pages/footer/footer.component';
 import { NzGridModule } from 'ng-zorro-antd/grid';
-
+import { SwiperModule } from "swiper/angular";
 
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
     NzDropDownModule,
     HomeRoutingModule,
     NzGridModule,
+    SwiperModule,
   ],
   exports: [
     CorpoHomeComponent,
