@@ -24,7 +24,6 @@ export class CorpoHomeComponent implements OnInit {
   onResize() {
     this.windowHeigth = window.innerHeight;
     this.windowWidth = window.innerWidth;
-
   }
 
 
