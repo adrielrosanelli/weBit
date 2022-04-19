@@ -18,20 +18,20 @@ const routes: Routes = [
         component: CorpoHomeComponent,
       },
       {
-        path:'contato',
+        path: '/weBit/contato',
         component:CorpoContatoComponent,
         outlet:'contato'
       },
       {
-        path:'Sobre',
+        path: '/weBit/Sobre',
         component:CorpoSobreComponent
       },
       {
-        path:'Serviços',
+        path: '/weBit/Serviços',
         component: CorpoServicosComponent
       },
       {
-        path:'Equipe',
+        path: '/weBit/Equipe',
         component: CorpoEquipeComponent
       }
 ];
