@@ -3,15 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeModule } from './home/home.module';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
-import { registerLocaleData } from '@angular/common';
+import { CommonModule, registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './pages/header/header.component';
+import { CorpoHomeComponent } from './pages/corpo-home/corpo-home.component';
+import { CorpoContatoComponent } from './pages/corpo-contato/corpo-contato.component';
+import { FooterComponent } from './/pages/footer/footer.component';
+import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzImageModule } from 'ng-zorro-antd/image';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { SwiperModule } from 'swiper/angular';
 
 registerLocaleData(en);
 
@@ -19,15 +28,25 @@ registerLocaleData(en);
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HeaderComponent,
+    CorpoHomeComponent,
+    CorpoContatoComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HomeModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule,
+    NzPageHeaderModule,
+    NzButtonModule,
+    NzImageModule,
+    NzIconModule,
+    NzDropDownModule,
+    NzGridModule,
+    SwiperModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

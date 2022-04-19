@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { CorpoContatoComponent } from './home/pages/corpo-contato/corpo-contato.component';
-import { CorpoEquipeComponent } from './home/pages/corpo-equipe/corpo-equipe.component';
-import { CorpoHomeComponent } from './home/pages/corpo-home/corpo-home.component';
-import { CorpoServicosComponent } from './home/pages/corpo-servicos/corpo-servicos.component';
-import { CorpoSobreComponent } from './home/pages/corpo-sobre/corpo-sobre.component';
+import { AppComponent } from './app.component';
+import { CorpoContatoComponent } from './pages/corpo-contato/corpo-contato.component';
+import { CorpoEquipeComponent } from './pages/corpo-equipe/corpo-equipe.component';
+import { CorpoHomeComponent } from './pages/corpo-home/corpo-home.component';
+import { CorpoServicosComponent } from './pages/corpo-servicos/corpo-servicos.component';
+import { CorpoSobreComponent } from './pages/corpo-sobre/corpo-sobre.component';
 
 const routes: Routes = [
   {
@@ -14,16 +14,7 @@ const routes: Routes = [
     pathMatch: "full",
   },
   {
-    path:'inicio',
-    component: HomeComponent,
-    children:[
-      {
-        path:'',
-        redirectTo: 'inicio',
-        pathMatch: "full",
-      },
-      {
-        path:'',
+    path: 'inicio',
         component: CorpoHomeComponent,
       },
       {
@@ -43,9 +34,6 @@ const routes: Routes = [
         path:'Equipe',
         component: CorpoEquipeComponent
       }
-    ]
-  }
-
 ];
 
 @NgModule({
