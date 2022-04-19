@@ -11,29 +11,28 @@ const routes: Routes = [
   {
     path:'',
     redirectTo: 'inicio',
-    pathMatch: "full",
+    pathMatch: "prefix",
   },
   {
     path: 'inicio',
         component: CorpoHomeComponent,
-      },
-      {
-        path: '/weBit/contato',
-        component:CorpoContatoComponent,
-        outlet:'contato'
-      },
-      {
-        path: '/weBit/Sobre',
-        component:CorpoSobreComponent
-      },
-      {
-        path: '/weBit/Serviços',
-        component: CorpoServicosComponent
-      },
-      {
-        path: '/weBit/Equipe',
-        component: CorpoEquipeComponent
-      }
+  },
+  {
+    path: 'contato',
+    component: CorpoContatoComponent,
+  },
+  {
+    path: 'sobre',
+    component: CorpoSobreComponent
+  },
+  {
+    path: 'servicos',
+    component: CorpoServicosComponent
+  },
+  {
+    path: 'equipe',
+    component: CorpoEquipeComponent
+  }
 ];
 
 @NgModule({

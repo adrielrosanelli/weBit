@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
             {
                 name: '1',
                 descricao: 'Inicio',
-                rota: 'inicio'
+                rota: '/inicio'
             },
             {
                 name: '2',
