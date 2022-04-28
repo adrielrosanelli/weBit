@@ -52,9 +52,11 @@ export class HeaderComponent implements OnInit {
     onResize() {
         this.windowHeigth = window.innerHeight;
         this.windowWidth = window.innerWidth;
-        if(window.innerWidth >= 700){
-            this.largura = (this.windowWidth /5).toString();
-        }else{
+        if (window.innerWidth >= 1400) {
+            this.largura = (this.windowWidth / 8).toString();
+        } else if (window.innerWidth >= 710) {
+            this.largura = (this.windowWidth / 5).toString();
+        } else if (window.innerWidth <= 700) {
             this.largura = "150";
         }
 
