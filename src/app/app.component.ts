@@ -11,15 +11,24 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.onResize();
+    this.onScroll();
   }
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.windowHeigth = window.innerHeight;
     this.windowWidth = window.innerWidth;
-    if (this.windowWidth > 700) {
-      document.getElementById('degrade')?.setAttribute('style', 'display: flex;flex-direction: column;height: 100%');
+
+    document.getElementById('degrade')?.setAttribute('style', 'display: flex;flex-direction: column;height: 110%');
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    if (scrollY >= 1) {
+      document.getElementById('header')?.classList.add('scroll');
+      document.getElementById('corpo-home')?.classList.add('scrollado');
     } else {
-      document.getElementById('degrade')?.setAttribute('style', 'display: flex ;flex-direction: column;height: auto;min-height:100%;background-size:cover');
+      document.getElementById('corpo-home')?.classList.remove('scrollado');
+      document.getElementById('header')?.classList.remove('scroll');
     }
   }
 }

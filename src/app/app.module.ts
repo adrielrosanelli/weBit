@@ -21,6 +21,10 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { SwiperModule } from 'swiper/angular';
+import { CorpoSobreComponent } from './pages/corpo-sobre/corpo-sobre.component';
+import { CorpoServicosComponent } from './pages/corpo-servicos/corpo-servicos.component';
+import { CorpoEquipeComponent } from './pages/corpo-equipe/corpo-equipe.component';
+import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 
 registerLocaleData(en);
 
@@ -31,6 +35,9 @@ registerLocaleData(en);
     HeaderComponent,
     CorpoHomeComponent,
     CorpoContatoComponent,
+    CorpoSobreComponent,
+    CorpoServicosComponent,
+    CorpoEquipeComponent,
     FooterComponent,
   ],
   imports: [
@@ -47,6 +54,7 @@ registerLocaleData(en);
     NzDropDownModule,
     NzGridModule,
     SwiperModule,
+    NzToolTipModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

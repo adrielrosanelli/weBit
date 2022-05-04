@@ -8,31 +8,6 @@ import { CorpoServicosComponent } from './pages/corpo-servicos/corpo-servicos.co
 import { CorpoSobreComponent } from './pages/corpo-sobre/corpo-sobre.component';
 
 const routes: Routes = [
-  {
-    path:'',
-    redirectTo: 'inicio',
-    pathMatch: "prefix",
-  },
-  {
-    path: 'inicio',
-        component: CorpoHomeComponent,
-  },
-  {
-    path: 'contato',
-    component: CorpoContatoComponent,
-  },
-  {
-    path: 'sobre',
-    component: CorpoSobreComponent
-  },
-  {
-    path: 'servicos',
-    component: CorpoServicosComponent
-  },
-  {
-    path: 'equipe',
-    component: CorpoEquipeComponent
-  }
 ];
 
 @NgModule({

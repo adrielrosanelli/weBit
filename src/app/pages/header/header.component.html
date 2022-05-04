@@ -27,7 +27,7 @@
         <nz-dropdown-menu #menu="nzDropdownMenu">
           <ul nz-menu>
             <button nz-menu-item *ngFor="let but of botoes" nz-button nzType="link" nzSize="large"
-              class="hoverado" routerLinkActive="ativado" [routerLink]="but.rota">
+              class="hoverado" routerLinkActive="ativado" >
             <p style="color: black;">{{but.descricao}}</p>
           </button>
           </ul>

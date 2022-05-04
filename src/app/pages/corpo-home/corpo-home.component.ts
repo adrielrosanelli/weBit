@@ -15,9 +15,7 @@ export class CorpoHomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    document.getElementsByTagName('corpo-home')[0].setAttribute('style', 'flex: 1');
     this.onResize();
-    SwiperCore.use([Autoplay]);
   }
 
   @HostListener('window:resize', ['$event'])

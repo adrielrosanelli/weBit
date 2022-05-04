@@ -1,0 +1,16 @@
+#contato{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #1890ff;
+    height: 300px;
+    border-radius: 35px;
+    padding-inline: 10px;
+    justify-content: space-evenly;
+}
+.icon{
+    font-size: x-large;
+    color: grey;
+}
+.icon:hover{
+    color: #1890ff;
+}

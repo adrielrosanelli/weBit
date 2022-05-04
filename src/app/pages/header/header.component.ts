@@ -27,21 +27,16 @@ export class HeaderComponent implements OnInit {
             },
             {
                 name: '2',
-                descricao: 'Contato',
-                rota: 'contato'
-            },
-            {
-                name: '3',
                 descricao: 'Sobre',
                 rota: 'sobre'
             },
             {
-                name: '4',
+                name: '3',
                 descricao: 'Serviços',
                 rota: 'servicos'
             },
             {
-                name: '5',
+                name: '4',
                 descricao: 'Equipe',
                 rota: 'equipe'
             },
@@ -61,14 +56,6 @@ export class HeaderComponent implements OnInit {
         }
 
     }
-
-
-    // ativou(valor:any) {
-    //     this.ativo = valor.name;
-
-    //     this.router.navigate(['/' + valor.rota])
-
-    // }
 
     ngOnInit(): void {
         this.onResize();

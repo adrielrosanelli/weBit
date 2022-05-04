@@ -11,7 +11,7 @@ export class CorpoContatoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    document.getElementById('contato')?.parentElement!.setAttribute('style', 'flex : 1');
+    // document.getElementById('contato')?.parentElement!.setAttribute('style', 'flex : 1');
   }
 
 }
