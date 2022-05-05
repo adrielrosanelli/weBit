@@ -1,17 +1,22 @@
 <div class="site-page-header-ghost-wrapper">
-  <nz-page-header [nzGhost]="true">
+  <nz-page-header [nzGhost]="true" id="header">
     <nz-page-header-title>
-      <img *ngIf="windowWidth >700" [width]="largura" nz-image nzSrc="assets\images\g834.png" />
-      <img *ngIf="windowWidth <=700" nz-image nzSrc="assets\images\simbolo_principal.png" style="width: 75px;" />
+      <img *ngIf="windowWidth >700" width="250rem" nz-image nzSrc="assets\images\marca_sem_apoio_branca.png" />
+      <img *ngIf="windowWidth <=700" nz-image nzSrc="assets\images\simbolo_principal.png" style="width: 50px;" />
     </nz-page-header-title>
 
-    <nz-page-header-extra *ngIf="windowWidth >=700">
+    <nz-page-header-extra *ngIf="windowWidth >=865" style="margin-bottom: 0px;">
       <button *ngFor="let but of botoes" nz-button nzType="link" nzSize="large"
-        class="hoverado" routerLinkActive="ativado" [routerLink]="but.rota">
+        class="hoverado">
         <p>{{but.descricao}}</p>
       </button>
     </nz-page-header-extra>
-    <nz-page-header-extra *ngIf="windowWidth <700">
+    <nz-page-header-extra *ngIf="windowWidth >=865" class="agendar-consulta">
+      <button nz-button nzType="default" nzSize="large" nzShape="round" nzGhost="">
+        Agendar Consulta
+      </button>
+    </nz-page-header-extra>
+    <nz-page-header-extra *ngIf="windowWidth <865">
       <ng-container>
         <button nz-button nz-dropdown nzType="link" nzSize="large" [nzDropdownMenu]="menu">
           <i nz-icon style="color: white" id="menu">

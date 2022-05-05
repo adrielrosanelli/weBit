@@ -2,7 +2,7 @@
     background: 
     linear-gradient(100deg, var(--cor-primaria),  var(--cor-complementar),var(--cor-secundaria));   // Marinho
     background-size: 300% 300%;
-    animation: colors 20s ease infinite;
+    animation: colors 15s ease infinite;
 }
 @keyframes colors {
     0%{
@@ -22,11 +22,16 @@ corpo-contato{
     top: 40%;
 }
 .scrollado{
-    margin-top: 115px;
+    margin-top: 5.6rem;
 }
 .scroll{
     width: 100%;
-    background-color: black;
     position: fixed;
     z-index: 3;
+    //! Mudar de degrade para a cor roxa;
+    // background-color: var(--cor-complementar);
+    background: 
+    linear-gradient(100deg,  var(--cor-complementar),var(--cor-secundaria));   // Marinho
+    background-size: 200% 200%;
+    animation: colors 15s ease infinite;
 }

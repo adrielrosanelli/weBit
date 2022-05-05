@@ -11,7 +11,9 @@ img{
     font-weight: 600 !important;
 }
 .hoverado{
-    margin-top: 15px !important;
+    margin-bottom: 0px;
+    margin-top: 13px;
+    padding-bottom: 41.5px;
     overflow: hidden;
     text-align: center !important;
     align-items: center !important; //centraliza horizontalmente
@@ -19,13 +21,17 @@ img{
     background-color: 0 0 0 0;
 }
 .hoverado:hover{
-    cursor: pointer;
-}
-.ativado{
-
     p{
         color: var(--cor-detalhe);
     }
-    border-bottom: 2px solid var(--cor-detalhe);
-
+    border-bottom: 3px solid var(--cor-detalhe);
+    cursor: pointer;
+}
+.agendar-consulta{
+    display: flex;
+    align-items: center;
+}
+#header{
+    padding-top: 16px;
+    padding-bottom: 0px;
 }
