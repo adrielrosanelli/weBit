@@ -12,7 +12,7 @@ export class CorpoSobreComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    document.getElementById('sobre')?.parentElement!.setAttribute('style', 'flex : 1');
+    // document.getElementById('sobre')?.parentElement!.setAttribute('style', 'flex : 1');
   }
 
 }
