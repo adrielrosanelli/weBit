@@ -7,8 +7,10 @@
 
     <nz-page-header-extra *ngIf="windowWidth >=865" style="margin-bottom: 0px;">
       <button *ngFor="let but of botoes" nz-button nzType="link" nzSize="large"
-        class="hoverado">
-        <p>{{but.descricao}}</p>
+        class="hoverado" [id]="'botao' + but.name">
+        <a  [href]="but.rota" (click)="ativo(but.name)">
+          <p [id]="'texto'+but.name">{{but.descricao}}</p>
+        </a>
       </button>
     </nz-page-header-extra>
     <nz-page-header-extra *ngIf="windowWidth >=865" class="agendar-consulta">

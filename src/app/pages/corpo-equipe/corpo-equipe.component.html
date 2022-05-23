@@ -1,4 +1,15 @@
 <div id="equipe">
-
-    <p>Equipe Work's</p>
+<div class="geral">
+    <ng-container *ngFor="let colaborador of listaColaboradores">
+        <div>
+            <div class="card-corpo">
+                <img class="imagem" src="assets\images\pessoaFeliz.webp" alt="">
+                <div class="textos">
+                    <p class="nome">{{colaborador.name}}</p>
+                    <p class="cargo">{{colaborador.role}}</p>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</div>
 </div>

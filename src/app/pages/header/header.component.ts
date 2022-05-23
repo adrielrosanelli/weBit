@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-    public ativo: String = "1";
+    public idAnterior: String = '';
 
     public botoes: Array<any> = [];
 
@@ -23,22 +23,22 @@ export class HeaderComponent implements OnInit {
             {
                 name: '1',
                 descricao: 'Inicio',
-                rota: '/inicio'
+                rota: '#inicio'
             },
             {
                 name: '2',
                 descricao: 'Sobre',
-                rota: 'sobre'
+                rota: '#sobre'
             },
             {
                 name: '3',
                 descricao: 'Serviços',
-                rota: 'servicos'
+                rota: '#servicos'
             },
             {
                 name: '4',
                 descricao: 'Equipe',
-                rota: 'equipe'
+                rota: '#equipe'
             },
         ];
     }
@@ -61,4 +61,11 @@ export class HeaderComponent implements OnInit {
         this.onResize();
     }
 
+    ativo(id: string) {
+        document.getElementById('botao' + this.idAnterior)?.setAttribute('style', 'border-bottom: none;');
+        document.getElementById('texto' + this.idAnterior)?.setAttribute('style', 'color: white;');
+        document.getElementById('botao' + id)?.setAttribute('style', 'border-bottom: 3px solid #FFB701;');
+        document.getElementById('texto' + id)?.setAttribute('style', 'color: #FFB701;');
+        this.idAnterior = id;
+    }
 }
