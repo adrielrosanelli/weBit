@@ -6,6 +6,9 @@ p{
 img{
     text-align: start !important;
 }
+img:hover{
+    cursor: pointer;
+}
 .texto{
     font-family: 'Poppins';
     font-weight: 600 !important;
@@ -34,4 +37,9 @@ img{
 #header{
     padding-top: 16px;
     padding-bottom: 0px;
+}
+
+#botao-agendar-consulta:hover{
+    color: var(--cor-detalhe);
+    border: 1px solid var(--cor-detalhe);
 }

@@ -1,8 +1,12 @@
 <div class="site-page-header-ghost-wrapper">
   <nz-page-header [nzGhost]="true" id="header">
     <nz-page-header-title>
-      <img *ngIf="windowWidth >700" width="250rem" nz-image nzSrc="assets\images\marca_sem_apoio_branca.png" />
-      <img *ngIf="windowWidth <=700" nz-image nzSrc="assets\images\simbolo_principal.png" style="width: 50px;" />
+      <a href="#inicio">
+        <img *ngIf="windowWidth >700" width="250rem" src="assets\images\marca_sem_apoio_branca.png" />
+      </a>
+      <a href="#inicio">
+        <img *ngIf="windowWidth <=700" src="assets\images\simbolo_principal.png" style="width: 50px;" />
+      </a>
     </nz-page-header-title>
 
     <nz-page-header-extra *ngIf="windowWidth >=865" style="margin-bottom: 0px;">
@@ -14,7 +18,7 @@
       </button>
     </nz-page-header-extra>
     <nz-page-header-extra *ngIf="windowWidth >=865" class="agendar-consulta">
-      <button nz-button nzType="default" nzSize="large" nzShape="round" nzGhost="">
+      <button id="botao-agendar-consulta" nz-button nzType="default" nzSize="large" nzShape="round" nzGhost="">
         Agendar Consulta
       </button>
     </nz-page-header-extra>
@@ -22,7 +26,7 @@
       <ng-container>
         <button nz-button nz-dropdown nzType="link" nzSize="large" [nzDropdownMenu]="menu">
           <i nz-icon style="color: white" id="menu">
-            <svg style="font-size: 45px;margin-top:25px">
+            <svg style="font-size: 45px">
               <path 
                 d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
                 fill="#FFFFFF"
@@ -34,8 +38,10 @@
         <nz-dropdown-menu #menu="nzDropdownMenu">
           <ul nz-menu>
             <button nz-menu-item *ngFor="let but of botoes" nz-button nzType="link" nzSize="large"
-              class="hoverado" routerLinkActive="ativado" >
-            <p style="color: black;">{{but.descricao}}</p>
+              routerLinkActive="ativado" >
+            <a [href]="but.rota">
+              <p style="color: black;">{{but.descricao}}</p>
+            </a>
           </button>
           </ul>
         </nz-dropdown-menu>
