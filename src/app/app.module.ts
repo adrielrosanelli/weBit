@@ -25,6 +25,7 @@ import { CorpoSobreComponent } from './pages/corpo-sobre/corpo-sobre.component';
 import { CorpoServicosComponent } from './pages/corpo-servicos/corpo-servicos.component';
 import { CorpoEquipeComponent } from './pages/corpo-equipe/corpo-equipe.component';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
+import { ValoresComponent } from './pages/valores/valores.component';
 
 registerLocaleData(en);
 
@@ -39,6 +40,7 @@ registerLocaleData(en);
     CorpoServicosComponent,
     CorpoEquipeComponent,
     FooterComponent,
+    ValoresComponent,
   ],
   imports: [
     BrowserModule,
