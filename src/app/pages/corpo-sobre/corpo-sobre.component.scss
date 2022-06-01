@@ -1,3 +1,11 @@
+.sobre {
+    font-size: medium;
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--cor-complementar-light);
+}
 .grupo{
     display: flex;
     flex-direction: row;
@@ -18,14 +26,7 @@
     width: 100%;
 }
 
-#sobre{
-    font-size: medium;
-    font-family: 'Poppins';
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: var(--cor-complementar-light);
-}
+
 #titulo{
     width: fit-content;
     letter-spacing: 4px;

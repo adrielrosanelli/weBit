@@ -7,7 +7,6 @@ body {
   margin: 0;
   font-family: 'Poppins';
   font-weight: 600 !important;
-  background: #ffffff;
 }
 
 .timeline {
@@ -96,8 +95,7 @@ body {
   height: 40px;
   padding: 9px 0;
   top: calc(50% - 20px);
-  background: white;
-  border: 2px solid gray;
+  border: 2px solid var(--cor-complementar);
   border-radius: 40px;
   text-align: center;
   font-size: 18px;
@@ -115,18 +113,20 @@ body {
 
 .container .content {
   padding: 30px 90px 30px 30px;
-  background: white;
   position: relative;
-  border: 2px solid grey;
+  border: 2px solid var(--cor-complementar);
   border-radius: 20px;
-  box-shadow: 2px 2px gray;
+  box-shadow: 2px 2px var(--cor-complementar);
+    ;
 }
 
 .container.right .content {
   padding: 30px 30px 30px 90px;
-  border: 2px solid grey;
+  border: 2px solid var(--cor-complementar);
+    ;
   border-radius: 20px;
-  box-shadow: 2px 2px gray;
+  box-shadow: 2px 2px var(--cor-complementar);
+    ;
 }
 
 .container .content h2 {
@@ -146,7 +146,6 @@ body {
 
 .cabecalho{
   margin-bottom: 15px;
-  margin-top: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,12 +159,12 @@ body {
 
 @media (max-width: 767.98px) {
   .timeline::after {
-    left: 90px;
+    left: 50px;
   }
 
   .container {
     width: 100%;
-    padding-left: 120px;
+    padding-left: 70px;
     padding-right: 30px;
   }
 
@@ -175,7 +174,7 @@ body {
 
   .container.left::after, 
   .container.right::after {
-    left: 82px;
+    left: 42px;
   }
 
   .container.left .date,
@@ -187,12 +186,59 @@ body {
   .container.left .icon,
   .container.right .icon {
     right: auto;
-    left: 146px;
+    left: 90px;
   }
 
   .container.left .content,
   .container.right .content {
     padding: 30px 30px 30px 90px;
     border-radius: 500px 0 0 500px;
+  }
+.date {
+  display: none !important;
+}
+}
+
+@media (max-width:500px) {
+  .timeline::after {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .container.left::after,
+  .container.right::after {
+    left: 0px;
+    display: none;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 90px;
+    display: none;
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 0px;
+  }
+
+  .date {
+    display: none !important;
+  }
+
+  .content {
+    padding: 30px !important;
   }
 }
