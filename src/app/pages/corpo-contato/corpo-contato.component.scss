@@ -1,7 +1,7 @@
 #contato{
     display: flex;
     flex-direction: column;
-    border: 2px solid #1890ff;
+    border: 2px solid var(--cor-secundaria);
     height: 300px;
     border-radius: 35px;
     padding-inline: 10px;
@@ -9,8 +9,8 @@
 }
 .icon{
     font-size: x-large;
-    color: grey;
+    color: white;
 }
 .icon:hover{
-    color: #1890ff;
+    color: var(--cor-detalhe);
 }

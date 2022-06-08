@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import SwiperCore, { Autoplay } from "swiper";
 @Component({
   selector: 'corpo-home',
@@ -7,8 +7,14 @@ import SwiperCore, { Autoplay } from "swiper";
 })
 export class CorpoHomeComponent implements OnInit {
 
-  public windowHeigth: any = window.innerHeight;
+  public windowHeight: any = window.innerHeight;
   public windowWidth: number = window.innerWidth;
+
+  @Input()
+  height: any;
+
+  @Input()
+  width: any;
 
   constructor() {
 
@@ -20,8 +26,8 @@ export class CorpoHomeComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize() {
-    this.windowHeigth = window.innerHeight;
-    this.windowWidth = window.innerWidth;
+    this.windowHeight = window.innerHeight - 180;
+    this.windowWidth = window.innerWidth - 70;
   }
 
 

@@ -6,7 +6,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'weBit';
-  public windowHeigth: number = 0;
+  public windowHeight: number = 0;
   public windowWidth: number = 0;
 
   ngOnInit(): void {
@@ -15,10 +15,9 @@ export class AppComponent implements OnInit {
   }
   @HostListener('window:resize', ['$event'])
   onResize() {
-    this.windowHeigth = window.innerHeight;
+    this.windowHeight = window.innerHeight;
     this.windowWidth = window.innerWidth;
-
-    document.getElementById('degrade')?.setAttribute('style', 'display: flex;flex-direction: column;height: 110%');
+    document.getElementById('degrade')?.setAttribute('style', 'display: flex;flex-direction: column;height: 100%');
   }
 
   @HostListener('window:scroll', ['$event'])

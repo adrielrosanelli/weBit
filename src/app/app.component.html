@@ -1,12 +1,10 @@
 <!-- NG-ZORRO -->
-<div id="degrade" style="display: flex ;
-flex-direction: column;">
+<div id="degrade">
 <div id="inicio"></div>
     <header id="header"></header>
     <corpo-contato></corpo-contato>
-    <corpo-home id="corpo-home"></corpo-home>
-    <corpo-home></corpo-home>
-    <corpo-home></corpo-home>
+    <corpo-home [height]="windowHeight" [width]="windowWidth" id="corpo-home">
+    </corpo-home>
     <valores></valores>
     <corpo-servicos></corpo-servicos>
     <corpo-sobre></corpo-sobre>
