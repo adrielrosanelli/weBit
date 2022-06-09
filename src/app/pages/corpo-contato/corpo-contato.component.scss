@@ -14,3 +14,15 @@
 .icon:hover{
     color: var(--cor-detalhe);
 }
+@media (max-width:900px) {
+    #contato{
+        margin-top: 50px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        border-radius: 35px;
+        padding-block: 10px;
+        justify-content: space-evenly;
+    }
+}

@@ -1,59 +1,10 @@
-<!-- <div class="pai"> -->
-    <!-- Slider main container -->
-    <div class="container" [ngStyle]="{width:windowWidth+'px',height: windowHeight+'px'}">
-        <p>Teste</p>
+<div class="pai" [ngStyle]="{height: windowHeightFather+'px'}">
+    <div class="escrita">
+        <h1 class="titulo">Bem-vindo a Webit consultorias</h1>
+        <p class="apresentacao">Texto meramente ilustrativo, tentativa de frase legal e engajadora.
+            Tentando fazer um texto mais longo do que duas linhas, ainda tentando.
+        </p>
+        <corpo-contato *ngIf="windowWidth <=900"></corpo-contato>
     </div>
-    <!-- <swiper [loop]="true" [spaceBetween]="30" [autoplay]="{delay: 2500,disableOnInteraction: false}" class="mySwiper"
-        style="height: 100%;">
-        <ng-template swiperSlide>
-            <div
-                style="display: flex;justify-content: center;background-color: black;height: 100%;">
-                <p class="texto">Somos uma
-                    consultoria e
-                    assistência técnica em
-                    telecomunicações. Contamos com
-                    serviços na área de redes e
-                    trabalhamos desde a avaliação, planejamento, execução até a manutenção. </p>
-                <img class="imagem" src="assets\images\pattern_laranja.png">
-            </div>
-        </ng-template>
-        <ng-template swiperSlide>
-            <div style="display: flex;justify-content: center;height: 100%;border-radius: 25px;background-color: white;">
-                <p class="texto">Somos uma
-                    consultoria e
-                    assistência técnica em
-                    telecomunicações. Contamos com
-                    serviços na área de redes e
-                    trabalhamos desde a avaliação, planejamento, execução até a manutenção. </p>
-                <img class="imagem" src="assets\images\pattern_laranja.png">
-            </div>
-        </ng-template>
-        <ng-template swiperSlide>
-            <div style="display: flex;justify-content: center;height: 100%;border-radius: 25px;background-color: white;">
-                    <p class="texto">Somos uma
-                        consultoria e
-                        assistência técnica em
-                        telecomunicações. Contamos com
-                        serviços na área de redes e
-                        trabalhamos desde a avaliação, planejamento, execução até a manutenção. </p>
-                    <img class="imagem" src="assets\images\pattern_laranja.png">
-                </div>
-                </ng-template>
-                <ng-template swiperSlide>
-                    <div style="display: flex;justify-content: center;height: 100%;border-radius: 25px;background-color: white;">
-                        <p class="texto">Somos uma
-                            consultoria e
-                            assistência técnica em
-                            telecomunicações. Contamos com
-                            serviços na área de redes e
-                            trabalhamos desde a avaliação, planejamento, execução até a manutenção. </p>
-                        <img class="imagem" src="assets\images\pattern_laranja.png">
-                    </div>
-                </ng-template>
-                <ng-template swiperSlide>Slide 5</ng-template>
-                <ng-template swiperSlide>Slide 6</ng-template>
-                <ng-template swiperSlide>Slide 7</ng-template>
-                <ng-template swiperSlide>Slide 8</ng-template>
-                <ng-template swiperSlide>Slide 9</ng-template>
-                </swiper> -->
-                <!-- </div> -->
+    <img class="imagem" src="assets\images\teste-PhotoRoom.png" alt="">
+    </div>

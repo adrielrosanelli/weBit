@@ -22,16 +22,20 @@ corpo-contato{
     top: 35%;
 }
 .scrollado{
-    margin-top: 5.6rem;
+    margin-top: 5.5rem;
 }
 .scroll{
     width: 100%;
     position: fixed;
     z-index: 3;
-    //! Mudar de degrade para a cor roxa;
-    // background-color: var(--cor-complementar);
     background: 
     linear-gradient(100deg,  var(--cor-complementar),var(--cor-secundaria));   // Marinho
     background-size: 200% 200%;
     animation: colors 15s ease infinite;
+}
+
+@media (max-width:900px) {
+    corpo-contato{
+        display:none;
+    }
 }
