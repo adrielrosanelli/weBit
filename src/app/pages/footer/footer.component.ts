@@ -9,7 +9,6 @@ export class FooterComponent implements OnInit {
 
   public windowHeigth: any = window.innerHeight;
   public windowWidth: number = window.innerWidth;
-  public display: boolean = true;
 
   constructor() { }
 
@@ -21,27 +20,6 @@ export class FooterComponent implements OnInit {
   onResize() {
     this.windowHeigth = window.innerHeight;
     this.windowWidth = window.innerWidth;
-  }
-  onOff() {
-    document.getElementById('footer')!.style.opacity = "0.7";
-    setTimeout(() => {
-      document.getElementById('footer')!.style.opacity = "0.6";
-      setTimeout(() => {
-        document.getElementById('footer')!.style.opacity = "0.5";
-        setTimeout(() => {
-          document.getElementById('footer')!.style.opacity = "0.4";
-          setTimeout(() => {
-            document.getElementById('footer')!.style.opacity = "0.3";
-            setTimeout(() => {
-              document.getElementById('footer')!.style.opacity = "0.2";
-            }, 15);
-          }, 15);
-        }, 15);
-      }, 15);
-    }, 15);
-    setTimeout(() => {
-      this.display = !this.display;
-    }, 100);
   }
 
 }
