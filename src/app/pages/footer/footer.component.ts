@@ -7,7 +7,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  public windowHeigth: any = window.innerHeight;
+  public windowHeight: any = window.innerHeight;
   public windowWidth: number = window.innerWidth;
 
   constructor() { }
@@ -18,7 +18,7 @@ export class FooterComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize() {
-    this.windowHeigth = window.innerHeight;
+    this.windowHeight = window.innerHeight;
     this.windowWidth = window.innerWidth;
   }
 

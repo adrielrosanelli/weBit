@@ -61,6 +61,7 @@
     font-family: 'Poppins';
     margin: 0px;
     font-weight: 700;
+    transition: 500ms;
 }
 .cargo{
     padding: 0px;
@@ -68,6 +69,7 @@
     font-family: 'Poppins';
     font-weight: 600;
     color: var(--cor-detalhe);
+    transition: 500ms;
 }
 .cabecalho {
     margin-bottom: 15px;
