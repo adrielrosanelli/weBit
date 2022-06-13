@@ -26,14 +26,14 @@ export class HeaderComponent implements OnInit {
                 rota: '#inicio'
             },
             {
-                name: '2',
-                descricao: 'Sobre',
-                rota: '#sobre'
-            },
-            {
                 name: '3',
                 descricao: 'Serviços',
                 rota: '#servicos'
+            },
+            {
+                name: '2',
+                descricao: 'Sobre',
+                rota: '#sobre'
             },
             {
                 name: '4',
