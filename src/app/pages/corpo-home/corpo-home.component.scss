@@ -44,63 +44,108 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
-@media (max-width:1360px) {
+@media (max-width:1450px) {
 .imagem{
   height: 90%;
+  right: 1%;
+}
+.escrita{
+  align-items: initial;
+}
+.apresentacao{
+  width: 88%;
+}
+}
+@media (max-width:1220px) {
+.imagem{
+  height: 80%;
+  right: 0px;
+}
+.escrita{
+  align-items: initial;
+}
+.apresentacao{
+  font-size: 2vw;
+  width: 88%;
 }
 }
 @media (max-width:1060px) {
 .imagem{
-  display: none;
+  object-fit: contain;
+  position: unset;
+  
+  height: 30%;
+// display: none;
 }
 .pai{
+  flex-direction: column;
   width: 100%;
   margin: 0px;
 }
 .escrita{
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   width: min-content;
 }
 .titulo{
-  margin-inline: 5px;
-  font-size: 15vw;
-  line-height: 12vw;
+  font-size: 8vw;
+  line-height: 8vw;
 }
 .apresentacao{
   text-align: center;
-  margin-inline: 5px;
-  font-size: 5vw;
-  line-height: 7vw;
+  margin-top: 0px;
+  font-size: 2.5vw;
+  line-height: 3vw;
+}
+
+corpo-contato{
+  margin-top: 35px;
 }
 }
-@media (min-width:525px) and (max-width:760px) {
-.titulo{
-  font-size: 13vw;
-  line-height: 13vw;
-}
-.apresentacao{
-  font-size: 3vw;
-  line-height: 4vw;
-}
-}
+
 @media (min-width:761px) and (max-width:915px) {
 .titulo{
   font-size: 10vw;
   line-height: 10vw;
 }
 .apresentacao{
-  text-align: start;
+  text-align: center;
   font-size: 3vw;
   line-height: 4vw;
 }
 }
-@media (min-width:916px) and (max-width:1059px) {
-.titulo{
-  font-size: 8vw;
-  line-height: 8vw;
-}
-.apresentacao{
-  text-align: start;
-  font-size: 2vw;
-  line-height: 3vw;
-}
-}
+@media (min-width:525px) and (max-width:760px) {
+  .titulo{
+    font-size: 14vw;
+    line-height: 14vw;
+  }
+  .apresentacao{
+    text-align: center;
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+  }
+  }
+@media (max-width:524px) {
+  .titulo{
+    font-size: 14vw;
+    line-height: 14vw;
+  }
+  .apresentacao{
+    text-align: center;
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+  }
+@media (max-width:380px) {
+  .titulo{
+    font-size: 14vw;
+    line-height: 14vw;
+  }
+  .apresentacao{
+    text-align: center;
+    font-size: 6vw;
+    line-height: 7vw;
+  }
+  }
+  
