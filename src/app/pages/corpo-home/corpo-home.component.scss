@@ -117,27 +117,36 @@ corpo-contato{
 }
 @media (min-width:525px) and (max-width:760px) {
   .titulo{
-    font-size: 14vw;
-    line-height: 14vw;
+    font-size: 9.5vw;
+    line-height: 9vw;
   }
   .apresentacao{
     text-align: center;
     font-size: 3.5vw;
-    line-height: 4.5vw;
+    line-height: 4vw;
+  }
+  .imagem{
+    height: 30%;
   }
   }
 @media (max-width:524px) {
   .titulo{
-    font-size: 14vw;
-    line-height: 14vw;
+    font-size: 12vw;
+    line-height: 12vw;
   }
   .apresentacao{
     text-align: center;
-    font-size: 5vw;
-    line-height: 6vw;
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+  corpo-contato{
+    margin-top: 15px;
   }
   }
 @media (max-width:380px) {
+  corpo-contato{
+    margin-top: 15px;
+  }
   .titulo{
     font-size: 14vw;
     line-height: 14vw;

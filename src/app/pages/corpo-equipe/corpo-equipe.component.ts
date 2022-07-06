@@ -21,19 +21,23 @@ export class CorpoEquipeComponent implements OnInit {
     this.listaColaboradores = [
       {
         'name': 'Vitor Zatta Junior',
-        'role': 'Dono'
+        'role': 'Dono',
+        'foto': 'assets\\images\\vitor.webp'
       },
       {
         'name': 'Gustavo Meurer',
-        'role': 'Dono'
+        'role': 'Dono',
+        'foto': 'assets\\images\\meurer.webp'
       },
       {
         'name': 'Patrick Paludo',
-        'role': 'Dono'
+        'role': 'Dono',
+        'foto': 'assets\\images\\paludo.webp'
       },
       {
         'name': 'Matheus Geovanas',
-        'role': 'Dono'
+        'role': 'Dono',
+        'foto': 'assets\\images\\matheus.webp'
       },
     ]
   }
