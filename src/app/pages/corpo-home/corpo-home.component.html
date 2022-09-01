@@ -1,4 +1,17 @@
-<div class="pai" [ngStyle]="{height: windowHeightFather+'px'}">
+<div class="pai" [ngStyle]="{height: windowHeight+'px'}">
+    <corpo-contato id="contatos"></corpo-contato>
+    <div class="escrita">
+        <h1 class="titulo">Bem-vindo a Webit consultorias</h1>
+        <div *ngIf="windowWidth <= 1060" class="falsaImagem"></div>
+        <p class="apresentacao">Texto meramente ilustrativo, tentativa de frase legal e engajadora.
+            Tentando fazer um texto mais longo do que duas linhas, ainda tentando.
+        </p>
+    </div>
+    <img [ngStyle]="{height: windowHeightFather+'px'}" class="imagem" src="assets\images\teste-PhotoRoom.webp"
+        alt="mulher negra de camisa branca sorindo">
+</div>
+<!-- ! Código Velho  -->
+<!-- <div class="pai" [ngStyle]="{height: windowHeightFather+'px'}">
     <div class="escrita">
         <h1 class="titulo">Bem-vindo a Webit consultorias</h1>
         <div *ngIf="windowWidth <= 1060" class="falsaImagem"></div>
@@ -8,4 +21,4 @@
         </p>
         <corpo-contato *ngIf="windowWidth <=640"></corpo-contato>
     </div>
-    </div>
+    </div> -->

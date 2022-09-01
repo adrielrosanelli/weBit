@@ -24,8 +24,9 @@ export class CorpoHomeComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize() {
-    this.windowHeight = window.innerHeight - 180;
-    this.windowHeightFather = window.innerHeight - 90;
+    this.windowHeight = window.innerHeight - 85;
+    this.windowHeightFather = window.innerHeight - 102;
+    console.log(this.windowHeightFather);
     this.windowWidth = window.innerWidth;
   }
 }

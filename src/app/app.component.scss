@@ -22,7 +22,7 @@ corpo-contato{
     top: 35%;
 }
 .scrollado{
-    margin-top: 5.5rem;
+    margin-top: 85px;
 }
 .scroll{
     width: 100%;
@@ -34,7 +34,7 @@ corpo-contato{
     animation: colors 15s ease infinite;
 }
 
-@media (max-width:640px) {
+@media (max-width:999px) {
     corpo-contato{
         display:none;
     }
