@@ -1,4 +1,7 @@
 p{
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
   font-family: 'Poppins';
   font-weight: 600 !important;
   color: white;
@@ -6,71 +9,182 @@ p{
   line-height: 25px;
 }
 .pai{
-  display: grid;
-  grid-template-columns: 0.01fr 1fr 0.5fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 0px;
-  padding-inline: 15px;
-  width: 100%;
-  // clip-path: inset(0% 0% 9% 0%);
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  align-items: flex-end;
 }
 .titulo{
-  line-height: 16vh;
-  font-size: 16vh;
-color: var(--cor-secundaria);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  line-height: 10vw;
+  // font-size: 1000%;
+  font-size: 8vw;
+  color: var(--cor-secundaria);
 }
 .apresentacao{
 margin-top: 40px;
-font-size: 4.5vh;
-line-height: 5.5vh;
+// font-size: 250%;
+font-size: 2vw;
+line-height: 4vw;
 color: var(--cor-detalhe);
 }
 .escrita{
   height: 100%;
-  grid-area: 1 / 2 / 2 / 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
 }
 .imagem{
-  margin: 17px 0 0 15px;
-  grid-area: 1 / 3 / 2 / 4;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  // size: 70%;
+  max-height: 100%;
+  max-width: 70%;
+  margin-right: 15px;
   object-fit: contain;
-  width: 100%;
+  // width: 30vw;
 // position: absolute;
 // bottom: 0px;
 // right: 5%;
-  // height: 100;
+  // height: 90vh;
 }
 #contatos{
-  grid-area: 1 / 1 / 2 / 2;
-  margin-bottom: 176%;
     display: flex;
     margin-inline: 15px;
     align-items: center;
+    height: 100%;
 }
-// @media (max-width:1361px) {
+@media (max-width: 1360px) {
+  .imagem{
+    width: 30vw;
+  }
+}
+@media (max-width: 1150px) {
+  .pai{
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .escrita{
+    text-align: center;
+    margin-top: 2%;
+    padding-inline: 15px;
+    height: fit-content;
+    width: fit-content;
+  }
+  .titulo{
+    text-align: center;
+    font-size: 6vh;
+    line-height: 6vh;
+  }
+  .apresentacao{
+    margin-top: 30px;
+    font-size: 3vh;
+    line-height: 4vh;
+  }
+  .imagem{
+    object-fit: contain;
+    margin: 0px;
+  }
+  #contatos{
+    margin-top: 2%;
+    height: fit-content;
+    order: 3 !important;
+  }
+}
+@media (max-width:1149px) {
+  .imagem{
+    height: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .escrita{
+    height: 85%;
+  }
+  .apresentacao{
+    text-align: start;
+    margin-top: 40px;
+  }
+  .titulo{
+    text-align: start;
+  }
+  .imagem{
+    display: none;
+  }
+}
+// p{
+//   font-family: 'Poppins';
+//   font-weight: 600 !important;
+//   color: white;
+//   font-size: 30px;
+//   line-height: 25px;
+// }
+// .pai{
+//   display: grid;
+//   grid-template-columns: 0.01fr 1fr 0.5fr;
+//   grid-template-rows: 1fr;
+//   grid-column-gap: 10px;
+//   grid-row-gap: 0px;
+//   padding-inline: 15px;
+//   width: 100%;
+//   // clip-path: inset(0% 0% 9% 0%);
+// }
+// .titulo{
+//   line-height: 16vh;
+//   font-size: 16vh;
+// color: var(--cor-secundaria);
+// }
+// .apresentacao{
+// margin-top: 40px;
+// font-size: 4.5vh;
+// line-height: 5.5vh;
+// color: var(--cor-detalhe);
+// }
+// .escrita{
+//   height: 100%;
+//   grid-area: 1 / 2 / 2 / 3;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+// .imagem{
+//   margin: 17px 0 0 15px;
+//   grid-area: 1 / 3 / 2 / 4;
+//   object-fit: contain;
+//   width: 100%;
+// // position: absolute;
+// // bottom: 0px;
+// // right: 5%;
+//   // height: 100;
+// }
+// #contatos{
+//   grid-area: 1 / 1 / 2 / 2;
+//   margin-bottom: 176%;
+//     display: flex;
+//     margin-inline: 15px;
+//     align-items: center;
+// }
+// @media (max-width:1100px) {
+
 //   .titulo{
-//     line-height: 14vh;
-//     font-size: 14vh;
+//     line-height: 13vh;
+//     font-size: 13vh;
 //   }
 // .apresentacao{
-//   font-size: 4vh;
-//   line-height: 5vh;
+//   font-size: 3.5vh;
+//   line-height: 4.5vh;
 // }
 // }
-@media (max-width:1100px) {
 
-  .titulo{
-    line-height: 13vh;
-    font-size: 13vh;
-  }
-.apresentacao{
-  font-size: 3.5vh;
-  line-height: 4.5vh;
-}
-}
+/// O NOVO É daqui pra cima;
 // @media (min-width: 1000px) and (max-width: 1179px){
 //   .escrita{
 //     margin-left: 1%;
