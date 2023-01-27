@@ -27,6 +27,7 @@ import { CorpoEquipeComponent } from './pages/corpo-equipe/corpo-equipe.componen
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { ValoresComponent } from './pages/valores/valores.component';
 import { NavegacaoComponent } from './pages/navegacao/navegacao.component';
+import { NzModalModule } from 'ng-zorro-antd/modal';
 
 registerLocaleData(en);
 
@@ -58,7 +59,8 @@ registerLocaleData(en);
     NzDropDownModule,
     NzGridModule,
     SwiperModule,
-    NzToolTipModule
+    NzToolTipModule,
+    NzModalModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

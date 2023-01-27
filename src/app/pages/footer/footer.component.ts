@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { BotoesService } from '../botoes.service';
 
 @Component({
   selector: 'footer',
@@ -10,7 +11,9 @@ export class FooterComponent implements OnInit {
   public windowHeight: any = window.innerHeight;
   public windowWidth: number = window.innerWidth;
 
-  constructor() { }
+  constructor(
+    private botoesService:BotoesService
+  ) { }
 
   ngOnInit(): void {
     this.onResize();
@@ -20,6 +23,10 @@ export class FooterComponent implements OnInit {
   onResize() {
     this.windowHeight = window.innerHeight;
     this.windowWidth = window.innerWidth;
+  }
+
+  ativo(id:string){
+    this.botoesService.ativo(id);
   }
 
 }

@@ -1,5 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { BotoesService } from '../botoes.service';
+import { BotaoInicial } from '../modelo/botaoInicial.model';
+import { NzInputModule } from 'ng-zorro-antd/input';
 
 @Component({
   selector: 'header',
@@ -8,9 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-    public idAnterior: String = '';
-
-    public botoes: Array<any> = [];
+    public botoes: Array<BotaoInicial> = [];
 
     public windowHeigth:number = window.innerHeight;
 
@@ -18,29 +18,16 @@ export class HeaderComponent implements OnInit {
 
     public largura:String = "30%";
 
-    constructor(private route: ActivatedRoute,private router: Router) {
-        this.botoes = [
-            {
-                name: '1',
-                descricao: 'Inicio',
-                rota: '#inicio'
-            },
-            {
-                name: '3',
-                descricao: 'Serviços',
-                rota: '#servicos'
-            },
-            {
-                name: '2',
-                descricao: 'Sobre',
-                rota: '#sobre'
-            },
-            {
-                name: '4',
-                descricao: 'Equipe',
-                rota: '#equipe'
-            },
-        ];
+    public isVisible: boolean = false;
+
+    public nome: string = '';
+
+    public descricao: string = '';
+
+    constructor(
+        private botoesService: BotoesService
+        ) {
+        this.botoes = botoesService.botoesInicias;
     }
 
     @HostListener('window:resize', ['$event'])
@@ -62,10 +49,18 @@ export class HeaderComponent implements OnInit {
     }
 
     ativo(id: string) {
-        document.getElementById('botao' + this.idAnterior)?.setAttribute('style', 'border-bottom: none;');
-        document.getElementById('texto' + this.idAnterior)?.setAttribute('style', 'color: white;');
-        document.getElementById('botao' + id)?.setAttribute('style', 'border-bottom: 3px solid #FFB701;');
-        document.getElementById('texto' + id)?.setAttribute('style', 'color: #FFB701;');
-        this.idAnterior = id;
+        this.botoesService.ativo(id);
+    }
+
+    showModal(){
+        this.isVisible = true;
+    }
+
+    cancel(){
+        this.isVisible = false;
+    }
+
+    confirm(){
+        this.isVisible = false;
     }
 }

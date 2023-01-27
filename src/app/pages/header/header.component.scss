@@ -5,6 +5,7 @@ p{
 }
 img{
     text-align: start !important;
+    padding-bottom: 10px;
 }
 img:hover{
     cursor: pointer;
@@ -33,6 +34,12 @@ img:hover{
 .agendar-consulta{
     display: flex;
     align-items: center;
+}
+.corpo{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 #header{
     padding-top: 16px;

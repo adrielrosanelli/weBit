@@ -18,7 +18,7 @@
       </button>
     </nz-page-header-extra>
     <nz-page-header-extra *ngIf="windowWidth >=865" class="agendar-consulta">
-      <button id="botao-agendar-consulta" nz-button nzType="default" nzSize="large" nzShape="round" nzGhost="">
+      <button id="botao-agendar-consulta" nz-button nzType="default" nzSize="large" nzShape="round" nzGhost="" (click)="showModal()">
         Agendar Consulta
       </button>
     </nz-page-header-extra>
@@ -50,3 +50,25 @@
     </nz-page-header-extra>
   </nz-page-header>
 </div>
+<nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal" (nzOnCancel)="cancel()" (nzOnOk)="confirm()">
+  <ng-container *nzModalContent>
+    <div class="corpo">
+
+        <label for="nome">Nome</label>
+        <input name="nome" nz-input placeholder="Basic usage" [(ngModel)]="nome" />
+        <label for="descricao">Descrição</label>
+        <textarea name="descricao" rows="5" nz-input  placeholder="Basic usage" [(ngModel)]="descricao"></textarea>
+        <button id="demo-form" class="g-recaptcha" 
+          data-sitekey="reCAPTCHA_site_key" 
+          data-callback='onSubmit' 
+          data-action='submit'>Submit</button>
+    </div>
+  </ng-container>
+</nz-modal>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+  function onSubmit(token) {
+    console.log(token);
+    document.getElementById("demo-form").submit();
+  }
+</script>

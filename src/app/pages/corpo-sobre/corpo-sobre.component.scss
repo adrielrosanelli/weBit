@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: var(--cor-complementar-light);
+    background: linear-gradient(100deg,  var(--cor-complementar),var(--cor-secundaria));
+    // background-color: var(--cor-complementar-light);
 }
 .grupo{
     display: flex;
