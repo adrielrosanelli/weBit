@@ -96,10 +96,14 @@ color: var(--cor-detalhe);
   .imagem{
     height: 50%;
   }
+  #botao-agendar-consulta{
+    margin-block: 15px;
+    order: 2;
+  }
 }
 @media (max-width: 767px) {
   .escrita{
-    height: 85%;
+    height: 75%;
   }
   .apresentacao{
     text-align: start;
