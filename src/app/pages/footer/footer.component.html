@@ -2,10 +2,13 @@
     <div class="linha">
         <div class="coluna-rodape">
             <p class="titulo">Serviços</p>
-            <p> <a href="#primeiro" (click)="ativo('2')">Primeiro</a></p>
+            <div *ngFor="let servico of servicos">
+                <p><a [href]="'#'+servico.rota" (click)="ativo('2')">{{servico.descricao}}</a></p>
+            </div>
+            <!-- <p> <a href="#primeiro" (click)="ativo('2')">Primeiro</a></p>
             <p><a href="#segundo" (click)="ativo('2')">Segundo</a></p>
             <p><a href="#terceiro" (click)="ativo('2')">Terceiro</a></p>
-            <p><a href="#quarto" (click)="ativo('2')">Quarto</a></p>
+            <p><a href="#quarto" (click)="ativo('2')">Quarto</a></p> -->
         </div>
         <div class="coluna-rodape">
             <p class="titulo">Navegação</p>

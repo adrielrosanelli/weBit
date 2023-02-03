@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ValorService } from 'src/app/services/valor.service';
+import { Servico } from '../../modelo/servico.model';
 @Component({
   selector: 'corpo-servicos',
   templateUrl: './corpo-servicos.component.html',
@@ -6,29 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CorpoServicosComponent implements OnInit {
 
-  public testeado = [
-    {
-      nome: 'Marcelo',
-      descricao: 'eadsd asd awd '
-    },
-    {
-      nome: 'Augusto',
-      descricao: 'eadsd asd awd '
-    },
-    {
-      nome: 'Sezar',
-      descricao: 'eadsd asd awd '
-    },
-    {
-      nome: 'Kaue',
-      descricao: 'eadsd asd awd '
-    },
+  servicos: Array<Servico> = [];
 
-  ];
-
-
-  constructor() {
-
+  constructor(valorService:ValorService) {
+    this.servicos = valorService.servicos;
   }
 
   ngOnInit(): void {

@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { BotoesService } from '../botoes.service';
+import { Servico } from 'src/app/modelo/servico.model';
+import { ValorService } from '../../services/valor.service';
 
 @Component({
   selector: 'footer',
@@ -11,9 +12,13 @@ export class FooterComponent implements OnInit {
   public windowHeight: any = window.innerHeight;
   public windowWidth: number = window.innerWidth;
 
+  servicos: Array<Servico> = [];
+
   constructor(
-    private botoesService:BotoesService
-  ) { }
+    private valorService:ValorService
+  ) { 
+    this.servicos = valorService.servicos;
+  }
 
   ngOnInit(): void {
     this.onResize();
@@ -26,7 +31,7 @@ export class FooterComponent implements OnInit {
   }
 
   ativo(id:string){
-    this.botoesService.ativo(id);
+    this.valorService.ativo(id);
   }
 
 }

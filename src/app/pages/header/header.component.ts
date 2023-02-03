@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { BotoesService } from '../botoes.service';
-import { BotaoInicial } from '../modelo/botaoInicial.model';
+import { ValorService } from '../../services/valor.service';
+import { BotaoInicial } from '../../modelo/botaoInicial.model';
 import { NzInputModule } from 'ng-zorro-antd/input';
 
 @Component({
@@ -25,9 +25,9 @@ export class HeaderComponent implements OnInit {
     public descricao: string = '';
 
     constructor(
-        private botoesService: BotoesService
+        private valorService: ValorService
         ) {
-        this.botoes = botoesService.botoesInicias;
+        this.botoes = valorService.botoesInicias;
     }
 
     @HostListener('window:resize', ['$event'])
@@ -49,7 +49,7 @@ export class HeaderComponent implements OnInit {
     }
 
     ativo(id: string) {
-        this.botoesService.ativo(id);
+        this.valorService.ativo(id);
     }
 
     showModal(){

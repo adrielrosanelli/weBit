@@ -3,7 +3,28 @@
     <h1>Serviços</h1>
 </div>
 <div class="timeline">
-            <div id="primeiro" style="height: 85px;width: 10px;"></div>
+    <div *ngFor="let servico of servicos,let indice = index">
+        <div [id]="servico.rota" style="height: 85px;width: 10px;"></div>
+        <div [class]="'container ' + servico.lado ">
+            <i class="icon fa fa-home"></i>
+    
+            <div class="content">
+                <h2>{{servico.descricao}}</h2>
+                <p>
+                    {{servico.conteudo}}
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- <div id="servicos" style="height: 100px;width: 10px;"></div>
+<div class="cabecalho">
+    <h1>Serviços</h1>
+</div>
+<div class="timeline">
+    <div id="primeiro" style="height: 85px;width: 10px;"></div>
     <div class="container left">
         <div class="date">
             <h3 id="titulo">Organização de infraestrutura</h3>
@@ -65,4 +86,4 @@
             </p>
         </div>
     </div>
-</div>
+</div> -->
