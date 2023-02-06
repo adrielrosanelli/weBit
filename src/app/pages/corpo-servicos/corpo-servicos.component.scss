@@ -43,6 +43,14 @@ body {
 .container.right {
   left: 50%;
 }
+.right{
+  animation-name: direita;
+  animation-duration: 2s;
+}
+.left{
+  animation-name: esquerda;
+  animation-duration: 2s;
+}
 
 .container::after {
   content: '';
@@ -240,5 +248,17 @@ body {
 
   .content {
     padding: 30px !important;
+  }
+}
+@keyframes direita {
+  0%{
+    opacity: 0;
+    transform: translateY(150px);
+  }
+}
+@keyframes esquerda {
+  0%{
+    opacity: 0;
+    transform: translateY(-150px);
   }
 }

@@ -36,6 +36,10 @@ color: var(--cor-detalhe);
   justify-content: center;
   margin-left: 10px;
 }
+.escrita-animation{
+  animation-name: escrita;
+  animation-duration: 4s;
+}
 .imagem{
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -47,11 +51,18 @@ color: var(--cor-detalhe);
   margin-right: 15px;
   object-fit: contain;
 }
+.imagem-animation{
+  animation-name : imagem;
+  animation-duration: 2s;
+
+}
 #contatos{
     display: flex;
     margin-inline: 15px;
     align-items: center;
     height: 100%;
+    animation-name: contatos;
+    animation-duration: 2s;
 }
 @media (max-width: 1360px) {
   .imagem{
@@ -99,6 +110,8 @@ color: var(--cor-detalhe);
   #botao-agendar-consulta{
     margin-block: 15px;
     order: 2;
+    animation-name: botao-agendar-consulta;
+    animation-duration: 2s;
   }
 }
 @media (max-width: 767px) {
@@ -114,5 +127,24 @@ color: var(--cor-detalhe);
   }
   .imagem{
     display: none;
+  }
+}
+@keyframes imagem {
+  0%{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+
+@keyframes escrita {
+  0%{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+@keyframes contatos {
+  0%{
+    opacity: 0;
+    transform: translateX(-30px);
   }
 }

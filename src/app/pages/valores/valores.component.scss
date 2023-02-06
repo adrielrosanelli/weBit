@@ -43,6 +43,18 @@
         padding-block: 7px;
     }
 }
+.valor-animation{
+    animation-name: valor;
+    animation-duration: 2s;
+}
+.visao-animation{
+    animation-name: visao;
+    animation-duration: 2s;
+}
+.missao-animation{
+    animation-name: missao;
+    animation-duration: 2s;
+}
 .icon{
     padding-bottom: 7px;
     color: var(--cor-secundaria);
@@ -84,5 +96,24 @@
         padding-bottom: 7px;
         color: var(--cor-secundaria);
         font-size: xx-large;
+    }
+}
+
+@keyframes valor {
+    0%{
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+}
+@keyframes visao {
+    0%{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+}
+@keyframes missao {
+    0%{
+        opacity: 0;
+        transform: translateX(150px);
     }
 }

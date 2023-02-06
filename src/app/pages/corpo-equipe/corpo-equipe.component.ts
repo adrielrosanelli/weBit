@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AnimacaoService } from 'src/app/services/animacao.service';
 @Component({
   selector: 'corpo-equipe',
   templateUrl: './corpo-equipe.component.html',
@@ -8,13 +9,20 @@ export class CorpoEquipeComponent implements OnInit {
 
   public listaColaboradores: Array<any> = [];
 
-  constructor() {
+  constructor(private animacaoService: AnimacaoService) {
 
   }
 
   ngOnInit(): void {
     // document.getElementById('equipe')?.parentElement!.setAttribute('style', 'flex : 1');
     this.getColaboradores();
+    setTimeout(() => {
+      
+      this.animacaoService.carregaAnimacao('colaborador-0');
+      this.animacaoService.carregaAnimacao('colaborador-1');
+      this.animacaoService.carregaAnimacao('colaborador-2');
+      this.animacaoService.carregaAnimacao('colaborador-3');
+    }, 100);
   }
 
   getColaboradores() {
@@ -22,7 +30,7 @@ export class CorpoEquipeComponent implements OnInit {
       {
         'name': 'Vitor Zatta Junior',
         'role': 'Dono',
-        'foto': 'assets\\images\\vitor.webp'
+        'foto': 'assets\\images\\vitor.webp',
       },
       {
         'name': 'Gustavo Meurer',

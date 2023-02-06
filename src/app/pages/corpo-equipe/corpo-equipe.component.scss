@@ -5,6 +5,23 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.colaborador-0-animation{
+    animation-name: colaborador-0;
+    animation-duration: 2s;
+}
+.colaborador-1-animation{
+    animation-name: colaborador-1;
+    animation-duration: 2s;
+}
+.colaborador-2-animation{
+    animation-name: colaborador-2;
+    animation-duration: 2s;
+}
+.colaborador-3-animation{
+    animation-name: colaborador-3;
+    animation-duration: 2s;
+}
+
 .imagem{
     z-index: -2;
     width: 100%;
@@ -84,5 +101,30 @@
         color: var(--cor-detalhe);
         border-bottom: 5px solid var(--cor-secundaria);
         padding-bottom: 15px;
+    }
+}
+
+@keyframes colaborador-0 {
+    0%{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+}
+@keyframes colaborador-1 {
+    0%{
+        opacity: 0;
+        transform: translateY(150px);
+    }
+}
+@keyframes colaborador-2 {
+    0%{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+}
+@keyframes colaborador-3 {
+    0%{
+        opacity: 0;
+        transform: translateY(150px);
     }
 }

@@ -9,24 +9,24 @@ export class ValorService {
   idAnterior: string = '';
   botoesInicias: Array<BotaoInicial> = [
     {
-        name: '1',
-        descricao: 'Inicio',
-        rota: '#inicio'
+      name: '1',
+      descricao: 'Inicio',
+      rota: '#inicio'
     },
     {
-        name: '2',
-        descricao: 'Serviços',
-        rota: '#servicos'
+      name: '2',
+      descricao: 'Serviços',
+      rota: '#servicos'
     },
     {
-        name: '3',
-        descricao: 'Sobre',
-        rota: '#sobre'
+      name: '3',
+      descricao: 'Sobre',
+      rota: '#sobre'
     },
     {
-        name: '4',
-        descricao: 'Equipe',
-        rota: '#equipe'
+      name: '4',
+      descricao: 'Equipe',
+      rota: '#equipe'
     },
   ];
 
@@ -94,5 +94,5 @@ export class ValorService {
     document.getElementById('botao' + id)?.setAttribute('style', 'border-bottom: 3px solid #FFB701;');
     document.getElementById('texto' + id)?.setAttribute('style', 'color: #FFB701;');
     this.idAnterior = id;
-}
+  }
 }
