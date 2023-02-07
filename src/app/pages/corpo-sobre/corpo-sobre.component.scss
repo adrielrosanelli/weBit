@@ -29,7 +29,7 @@
     animation-duration: 2s;
 }
 .imagem-sobre-animation{
-    animation-name: imagem;
+    animation-name: imagem-sobre;
     animation-duration: 2s;
 }
 
@@ -81,9 +81,9 @@
         transform: translateX(120px);
     }
 }
-@keyframes imagem {
+@keyframes imagem-sobre {
     0%{
         opacity: 0;
-        transform: translateY(120px);
+        transform: translateX(120px);
     }
 }
