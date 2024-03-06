@@ -4,7 +4,7 @@
 </div>
 <div class="geral">
     <div *ngFor="let colaborador of listaColaboradores,let i = index" style="width: 250px;" [class]="'card-corpo' +' '+ 'colaborador-'+i">
-        <img class="imagem" [src]="colaborador.foto" alt="colaborador da empresa">
+        <!-- <img class="imagem" [src]="colaborador.foto" alt="colaborador da empresa"> -->
         <div class="textos">
             <h2 class="nome">{{colaborador.name}}</h2>
             <p class="cargo">{{colaborador.role}}</p>

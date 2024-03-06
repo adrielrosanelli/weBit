@@ -27,6 +27,7 @@ margin-top: 40px;
 font-size: 2vw;
 line-height: 4vw;
 color: var(--cor-detalhe);
+padding-left: 10px;
 }
 .escrita{
   height: 100%;
@@ -34,7 +35,7 @@ color: var(--cor-detalhe);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 10px;
+  margin-left: 78px;
 }
 .escrita-animation{
   animation-name: escrita;
@@ -61,12 +62,16 @@ color: var(--cor-detalhe);
     margin-inline: 15px;
     align-items: center;
     height: 100%;
+    position: fixed;
     animation-name: contatos;
     animation-duration: 2s;
 }
 @media (max-width: 1360px) {
   .imagem{
     width: 30vw;
+  }
+  .apresentacao{
+    padding-left: 0px;
   }
 }
 @media (max-width: 1150px) {
@@ -100,7 +105,8 @@ color: var(--cor-detalhe);
   #contatos{
     margin-top: 2%;
     height: fit-content;
-    order: 3 !important;
+    position: relative;
+    order: 3;
   }
 }
 @media (max-width:1150px) {

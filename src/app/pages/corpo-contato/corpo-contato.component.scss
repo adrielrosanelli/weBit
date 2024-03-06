@@ -6,17 +6,20 @@
     border-radius: 35px;
     padding-inline: 10px;
     justify-content: space-evenly;
+    transition: height 0.5s ease;
 }
 .icon{
     font-size: x-large;
     color: white;
+}
+.sumido{
+    display: none;
 }
 .icon:hover{
     color: var(--cor-detalhe);
 }
 @media (max-width:1150px) {
     #contato{
-        //margin-top: 50px;
         height: 100%;
         display: flex;
         flex-direction: row;
