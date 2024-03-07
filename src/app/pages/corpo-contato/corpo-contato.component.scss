@@ -18,9 +18,16 @@
 .icon:hover{
     color: var(--cor-detalhe);
 }
+.fixado{
+    position : fixed;
+    left : 12px;
+    flex-direction: column !important;
+    height :100px !important;
+    width :fit-content !important;
+}
 @media (max-width:1150px) {
     #contato{
-        height: 100%;
+        height: 50px;
         display: flex;
         flex-direction: row;
         width: 300px;

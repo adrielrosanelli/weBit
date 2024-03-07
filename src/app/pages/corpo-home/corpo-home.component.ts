@@ -18,7 +18,6 @@ export class CorpoHomeComponent implements OnInit {
     this.carregaAnimacao('escrita');
 
   }
-  
 
   @HostListener('window:resize', ['$event'])
   onResize() {
