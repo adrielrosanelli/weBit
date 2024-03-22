@@ -2,7 +2,48 @@
 <div class="cabecalho">
     <h1>Serviços</h1>
 </div>
-<div class="timeline">
+<div class="teste">
+
+    <div class="servicos">
+            <div class="column">
+                <div class="cartao">
+                    <p class="titulo">{{servicos[0].descricao}}</p>
+                    <p>{{servicos[0].conteudo}}</p>
+                </div>
+                <div class="cartao">
+                    <p class="titulo"> {{servicos[3].descricao}}</p>
+                    <p>{{servicos[3].conteudo}}</p>
+                </div>
+            </div>
+    
+            <div class="column para-baixo">
+                <div class="cartao">
+                    <p class="titulo">{{servicos[1].descricao}}</p>
+                    <p>{{servicos[1].conteudo}}</p>
+                </div>
+                <div class="cartao">
+                    <p class="titulo">{{servicos[4].descricao}}</p>
+                    <p>{{servicos[4].conteudo}}</p>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="cartao">
+                    <p class="titulo" > {{servicos[2].descricao}}</p>
+                    <p>{{servicos[2].conteudo}}</p>
+                </div>
+                <div class="cartao">
+                    <p class="titulo">{{servicos[5].descricao}}</p>
+                    <p>{{servicos[5].conteudo}}</p>
+                </div>
+            </div>
+        <!-- <div class="cartao" *ngFor="let servico of servicos,let indice = index">
+                <p>{{servico.descricao}}</p>
+                <p>{{servico.conteudo}}</p>
+        </div> -->
+    </div>
+</div>
+<!-- <div class="timeline">
     <div *ngFor="let servico of servicos,let indice = index">
         <div [id]="servico.rota" style="height: 85px;width: 10px;"></div>
         <div [class]="'container ' + servico.lado ">
@@ -18,72 +59,4 @@
     </div>
 
 
-</div>
-<!-- <div id="servicos" style="height: 100px;width: 10px;"></div>
-<div class="cabecalho">
-    <h1>Serviços</h1>
-</div>
-<div class="timeline">
-    <div id="primeiro" style="height: 85px;width: 10px;"></div>
-    <div class="container left">
-        <div class="date">
-            <h3 id="titulo">Organização de infraestrutura</h3>
-            <p>Teste</p>
-            <p>Teste</p>
-        </div>
-        <i class="icon fa fa-home"></i>
-
-        <div class="content">
-            <h2 id="segundo">Lorem ipsum dolor sit amet</h2>
-            <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper
-                pretium.
-            </p>
-        </div>
-    </div>
-    <div class="container right">
-        <div class="date">
-            <h3 id="titulo">Organização de infraestrutura</h3>
-            <p>Teste</p>
-            <p>Teste</p>
-        </div>
-        <i class="icon fa fa-gift"></i>
-        <div class="content">
-            <h2 id="terceiro">Lorem ipsum dolor sit amet</h2>
-            <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper
-                pretium.
-            </p>
-        </div>
-    </div>
-    <div class="container left">
-        <div class="date">
-            <h3>Organização de infraestrutura</h3>
-            <p>Teste</p>
-            <p>Teste</p>
-        </div>
-        <i class="icon fa fa-user"></i>
-        <div class="content">
-            <h2 id="quarto">Lorem ipsum dolor sit amet</h2>
-            <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper
-                pretium.
-            </p>
-        </div>
-    </div>
-    <div class="container right">
-        <div class="date">
-            <h3 id="titulo">Organização de infraestrutura</h3>
-            <p>Teste</p>
-            <p>Teste</p>
-        </div>
-        <i class="icon fa fa-certificate"></i>
-        <div class="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper
-                pretium.
-            </p>
-        </div>
-    </div>
 </div> -->
