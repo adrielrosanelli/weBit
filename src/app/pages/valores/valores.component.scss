@@ -60,7 +60,18 @@
     color: var(--cor-secundaria);
     font-size: xx-large;
 }
+@media (max-width:1320px){
+    .valores{
+        gap: 80px;
+    }
 
+}
+@media (max-width:900px){
+    .valores{
+        gap: 10px;
+    }
+
+}
 @media (max-width:400px) {
     .cabecalho{
         margin-bottom: 15px;

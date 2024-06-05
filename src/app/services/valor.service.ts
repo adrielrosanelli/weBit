@@ -23,11 +23,11 @@ export class ValorService {
       descricao: 'Sobre',
       rota: '#sobre'
     },
-    {
-      name: '4',
-      descricao: 'Equipe',
-      rota: '#equipe'
-    },
+    // {
+    //   name: '4',
+    //   descricao: 'Equipe',
+    //   rota: '#equipe'
+    // },
   ];
 
   servicos: Array<Servico> = [
